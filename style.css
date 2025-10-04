@@ -1,0 +1,119 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(238, 243, 248);
+    background-image: url('./back-school-decoration-with-pencils-calculator-space.jpg');
+
+}
+.calculator{
+    margin-left: 40px ;
+    background-color:rgb(148, 155, 155);
+    border-radius: 2%;
+    padding: 20px;
+    /* box-shadow: 10px 10px 10px 10px rgba(128, 129, 130, 0.803); */
+    width: 250px;
+    border: red;
+    border-style: 2px solid white ; 
+    border-width: 10px;
+    border: 2px solid black;
+
+    /* animation: pulsateBorder 2s infinite; */
+
+}
+
+/* @keyframes pulsateBorder {
+    0%{
+        border-color: red;
+    }
+    50%{
+        border-color: black;
+    }
+    100%{
+        border-color: ;
+    }
+} */
+
+#result{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    /* background-color: skyblue;*/
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+/* button{
+    /* padding: 10px; 
+    font-size: 18px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+
+} */
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+button {
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  background: #444;
+  color: white;
+}
+
+/* Hover effect */
+button:hover {
+  background: #666;
+}
+
+.resetBtn{
+
+}
+
+/* Special styles */
+button.operator {
+  background: #ff9500;
+  color: white;
+}
+
+button.operator:hover {
+  background: #e08900;
+}
+
+button.equal {
+  grid-column: span 2;
+  background: #28a745;
+  color: white;
+}
+
+button.equal:hover {
+  background: #1e7e34;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100;
+    margin-top: 99px;
+}
